@@ -11,9 +11,16 @@ function stickbar() {
   }
 }
 
-function mouseon(x){
+function github_on(x,y){
   x.innerHTML="I suck";
 }
-function mouseout(x){
-  x.innerHTML='<img src="images/github-logo.png" width="22px" height="22px">';
+function github_out(x){
+  x.innerHTML='<img src="images/github-logo.png" height=40px>';
+}
+
+function wca_on(x){
+  x.innerHTML="WCA Page";
+}
+function wca_out(x){
+  x.innerHTML='<img src="https://www.worldcubeassociation.org/files/WCAlogo_notext.svg" height=40px>'
 }

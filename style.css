@@ -2,8 +2,9 @@
 body{
     font-family: "Noto Sans TC";
     margin:0;
+    font-size: larger;
     background-color: rgb(34, 34, 34);
-    color: #d6d4d4;
+    color: rgb(228, 228, 228);
 }
 
 .header{
@@ -25,17 +26,14 @@ body{
     top:0;
     width:100%;
 }
-
-.sticky + .content{
-    padding-top:45px;
-}
  
 #navbar a{
     float:left;
     display: block;
-    text-align: center;
+    align-items: center;
+    justify-items: center;
+    font-size: 27px;
     padding:15px;
-    font-size: 15px;
     color: #ffffff;
     text-decoration: none;
 }
@@ -45,11 +43,21 @@ body{
     background-color: #ffffff;
 }
 
-.github-logo{
-    height:22px;
-    display:block;
+.flex-main{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-#content{
-    padding:45px;
+.explain{
+    cursor: help;
+}
+
+.list{
+    margin-left: 4em;
+}
+
+.nodec{
+    color:unset;
 }
