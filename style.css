@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC');
+body{
+    font-family: "Noto Sans TC";
+    margin:0;
+    background-color: rgb(34, 34, 34);
+    color: #d6d4d4;
+}
+
+.header{
+    text-align: center;
+    text-shadow: 1px 1px #7c7c7c;
+    width:100%;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+#navbar{
+    overflow: hidden;
+    width:100%;
+    background-color: #666666;
+}
+
+.sticky{
+    position: fixed;
+    top:0;
+    width:100%;
+}
+
+.sticky + .content{
+    padding-top:45px;
+}
+ 
+#navbar a{
+    float:left;
+    display: block;
+    text-align: center;
+    padding:15px;
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#navbar a:hover{
+    color: rgb(34, 34, 34);
+    background-color: #ffffff;
+}
+
+.github-logo{
+    height:22px;
+    display:block;
+}
+
+#content{
+    padding:45px;
+}
