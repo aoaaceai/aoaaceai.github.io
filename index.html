@@ -3,7 +3,8 @@
     
 <head>
     <!-- <meta http-equiv="refresh" content="5"> -->
-    <title>首頁 -aoaaceai</title>
+    <script src="./mouse.js"></script>
+    <title>首頁 - aoaaceai</title>
     <link href="./style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -15,27 +16,66 @@
     
     <div id="navbar">
         <a href="#Cubing">Cubing stuff</a>
+        <a href="#Coding">Coding</a>
         <a href="https://stoneapp.tech/cavern">cavern</a>
         <div style="float:right;height: 52px;">
-            <a href="https://github.com/aoaaceai" onmouseover=github_on(this) onmouseout=github_out(this)><img src="images/github-logo.png" height=40px></a>
-            <a href="https://www.worldcubeassociation.org/persons/2019LINS01"  onmouseover=wca_on(this) onmouseout=wca_out(this)><img src="https://www.worldcubeassociation.org/files/WCAlogo_notext.svg" height=40px></a>
+            <a href="https://github.com/aoaaceai" onmouseover=github_on(this) onmouseout=github_out(this)><img src="images/github-logo.png" id="navbar-icon" height=40px></a>
+            <a href="https://www.worldcubeassociation.org/persons/2019LINS01"  onmouseover=wca_on(this) onmouseout=wca_out(this)><img src="https://www.worldcubeassociation.org/files/WCAlogo_notext.svg" class="navbar-icon-follow"></a>
         </div>
         </div>
     
-    <div class="flex-main">
-
-        <div id="Cubing">
-        <h2>I'm a cuber.</h2>
-        <p>
-            速解：沒很快，實際上根本上不了檯面。
-            <span class="list">
-            <li>3x3x3: 11.93 avg (peak at <a href="https://www.speedsolving.com/wiki/index.php/National_Record" class="nodec" title="National Record">NR</a> #94) / 9.68 single (peak at <a href="https://www.speedsolving.com/wiki/index.php/National_Record" class="nodec" title="National Record">NR</a> #98)</li>
-            <li>4x4x4: Not yet</li>
-            <li>5x5x5: 1:53.99 avg / 1:48.10 single</li>
-            </span>
-            盲解：<a href="https://www.youtube.com/watch?v=A64Sy4WKiWY"  target="_blank" class="nodec" title="Old Pochmann">OP</a> / <a href="https://www.youtube.com/watch?v=LTRYeFsao9Q" class="nodec" title="Orozco">Orozco</a> 朝M2邁進中
-        </p>
+    <div class="flex-main" id="content">
+        <div style="align-self: center;">
+        <div id="General">
+            <h2>aoaaceai</h2>
+            <div>
+                魔術方塊玩家、python菜雞、前端垃圾
+            </div>
         </div>
+        <div id="Cubing">
+            <h2>I'm a cuber.</h2>
+            <div>
+                速解：沒很快，實際上根本上不了檯面。
+                <div class="list">
+                    <li>3x3x3: 11.93 avg (peak at <a href="https://www.speedsolving.com/wiki/index.php/National_Record" class="nodec" title="National Record">NR</a> #94) / 9.68 single (peak at <a href="https://www.speedsolving.com/wiki/index.php/National_Record" class="nodec" title="National Record">NR</a> #98)</li>
+                    <li>4x4x4: Not yet</li>
+                    <li>5x5x5: 1:53.99 avg / 1:48.10 single</li>
+                </div>
+                盲解：<a href="https://www.youtube.com/watch?v=A64Sy4WKiWY"  target="_blank" class="nodec" title="Old Pochmann">OP</a> 
+                / <a href="https://www.youtube.com/watch?v=LTRYeFsao9Q" class="nodec" title="Orozco">Orozco</a>，朝<a href="https://www.youtube.com/watch?v=BSF8-_EL97M" class="nodec" title="M2">M2</a>邁進中<br>
+                比賽：幕後黑手
+                <div class="list">
+                    <li><a href="https://stoneapp.tech/cavern/post.php?pid=315" class="nodec hidden-link">2019台北和平魔術方塊公開賽</a></li>
+                    <li>2019台北幾乎不玩正階賽</li>
+                    <li><a href="https://stoneapp.tech/cavern/post.php?pid=579" class="nodec hidden-link">CK Cubing Party 2019</a></li>
+                    <li><span class="explain" style="font-style: italic;" onmouseover=zhuyuangang_on(this) onmouseout=zhuyuangang_out(this)>2020竹園岡公開賽</span></li>
+                    <li>Future: CK Cubing Party 2020</li>
+                </div>
+            </div>
+        </div>
+
+        <div id="Coding">
+            <h2>I suck at programming.</h2>
+            <div>
+                數學/物理相關
+                <div class="list">
+                    <li><a href="https://www.glowscript.org/#/user/aoaaceai/folder/MyPrograms/program/random" class="nodec">用random方法生成四面體碎形</a></li>
+                    <li><a href="https://www.glowscript.org/#/user/aoaaceai/folder/MyPrograms/program/firework" class="nodec">3D模擬煙火爆炸</a></li>
+                    <li><span class="gravity" onmouseover=gravity_on(this) onmouseout=gravity_out(this)><a href="https://www.glowscript.org/#/user/aoaaceai/folder/MyPrograms/program/gravityspring" class="nodec">用重力模擬簡諧運動</a></span><span id="gravity-image"><img src="images/gravity-image.png" style="width: inherit;"></span></li>
+                </div>
+                魔術方塊相關
+                <div class="list">
+                    <li><a href="http://ck.tp.edu.tw/~ck1060529/CubeShapeTrainer.zip" class="nodec">CStrainer - Square-1 公式訓練工具</a></li>
+                    <li><a href="https://github.com/aoaaceai/CompAssistant" class="nodec">CompAssistant - 讓主辦不會累死的分組程式</a></li>
+                    <li><a href="https://github.com/aoaaceai/8puzzle" class="nodec" onmouseover=ep_on(this) onmouseout=ep_out(this)>用a*演算法解 8(或以上)-puzzle<span id="Ep-hid" style="visibility: hidden;"> NOTE: it takes quite a long time.</span></a></li>
+                </div>
+                協作專案
+                <div class="list">
+                    <li><a href="https://github.com/aoaaceai/310-seat" class="nodec">依使用者需求調整位置的選座位程式</a></li>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 </body>
 <script src="./style.js"></script>
