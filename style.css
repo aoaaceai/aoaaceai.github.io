@@ -82,9 +82,13 @@ h2{
 }
 
 .gravity:hover ::after{
-    content:" NOTE: it soon becomes a mess.";
+    content:" NOTE: it unavoidably becomes a mess in like 15 seconds.";
 }
 
 #Ep:hover #Ep-hid{
     visibility: visible;
+}
+
+#funfact:hover::after{
+    content:"Dang I was so awkward.";
 }
