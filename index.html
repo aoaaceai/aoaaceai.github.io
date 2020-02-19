@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
     
-    
 <head>
     <!-- <meta http-equiv="refresh" content="5"> -->
     <script src="./mouse.js"></script>
     <title>首頁 - aoaaceai</title>
     <link href="./style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -18,6 +18,15 @@
     <div id="navbar">
         <a href="#Cubing">Cubing stuff</a>
         <a href="#Coding">Coding</a>
+        <div class="dropdown">
+            <button class="dropbtn">Cubing tutorial 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="./tutorial/333.html">3x3x3</a>
+              <a href="./tutorial/333-trad.html">3x3x3-舊式</a>
+            </div>
+          </div> 
         <a href="https://stoneapp.tech/cavern">cavern</a>
         <div style="float:right;height: 52px;">
             <a href="https://github.com/aoaaceai" onmouseover=github_on(this) onmouseout=github_out(this)><img src="images/github-logo.png" id="navbar-icon" height=40px></a>
@@ -53,8 +62,9 @@
                     <li>Future: CK Cubing Party 2020</li>
                 </div>
                 <div id="funfact">Fun fact: I judged a WR. </div>
-                <iframe height=300 width=100% src="https://www.youtube.com/embed/bmnBicQIPe8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe height=300px width=100% src="https://www.youtube.com/embed/bmnBicQIPe8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+        </div>
         <div id="Coding">
             <h2>I suck at programming.</h2>
             <div>
@@ -76,7 +86,7 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
     </div>
 </body>
 <script src="./style.js"></script>

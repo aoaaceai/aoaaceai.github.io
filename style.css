@@ -3,6 +3,7 @@ body{
     font-family: "Noto Sans TC";
     margin:0;
     font-size: larger;
+    align-items: center;
     background-color: rgb(34, 34, 34);
     color: rgb(228, 228, 228);
 }
@@ -20,6 +21,7 @@ h2{
 
 #navbar{
     overflow: hidden;
+    z-index: 2147483647;
     width:100%;
     background-color: #666666;
 }
@@ -33,12 +35,46 @@ h2{
 #navbar a{
     float:left;
     display: block;
-    align-items: center;
-    justify-items: center;
     font-size: 27px;
     padding:15px;
     color: #ffffff;
     text-decoration: none;
+}
+
+.dropdown{
+    float:left;
+    overflow: hidden;
+}
+
+.dropbtn{
+    font-size: 27px;
+    padding:15px;
+    color:#ffffff;
+    background-color: inherit;
+    text-decoration: none;
+    border:none;
+    margin:0;
+}
+
+.dropdown:hover .dropbtn{
+    color:rgb(34, 34, 34);
+    background-color: #ffffff;
+}
+
+.dropdown-content{
+    display:none;
+    position:absolute;
+    background-color: inherit;
+}
+
+.dropdown-content a{
+    clear:both;
+    background-color:#565656;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
 }
 
 #navbar a:hover{
@@ -69,7 +105,7 @@ h2{
 
 .hidden-link{
     text-decoration: none;
-    cursor:default;
+    cursor:text;
 }
 
 #gravity-image{

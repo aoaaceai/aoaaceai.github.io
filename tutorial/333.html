@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <script src="./mouse.js"></script>
+    <title>魔術方塊教學 - aoaaceai</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>So you want to solve a cube.</h1>
+    </div>
+    
+    <div id="navbar">
+        <a href="../index.html">回首頁</a>
+        <a href="#Intro">基本概念</a>
+        <a href="https://stoneapp.tech/cavern">cavern</a>
+        <div style="float:right;height: 52px;">
+            <a href="https://github.com/aoaaceai" onmouseover=github_on(this) onmouseout=github_out(this)><img src="../images/github-logo.png" id="navbar-icon" height=40px></a>
+            <a href="https://www.worldcubeassociation.org/persons/2019LINS01"  onmouseover=wca_on(this) onmouseout=wca_out(this)><img src="https://www.worldcubeassociation.org/files/WCAlogo_notext.svg" class="navbar-icon-follow"></a>
+        </div>
+        </div>
+    
+    <div class="flex-main" id="content">
+        <div style="align-self: center;">
+        <div id="Intro">
+            <h2>認識方塊</h2>
+            <div>
+                魔術方塊有三種小塊，如下圖分別是：
+                <div class="list">
+                    <li>邊塊(紅色，12塊)</li>
+                    <li>角塊(藍色，8塊)</li>
+                    <li>中心塊(灰色，6塊)</li>
+                </div>
+                <div id="image-container" class="indent"><img src="image/pieces.png" width=300px/></div>
+            </div>
+            <h2>代號解說</h2>
+            <div>
+                由於魔術方塊的公式十分複雜而難以記憶，我們通常會用一些符號表示。<br>
+                個人推薦使用<a href="https://cushan.io" class="nodec">CuSHan</a>記法，如果想學傳統記法可以點<a href="./333-trad.html" class="nodec">這裡</a>：
+                <div class="cushan-explain" >
+                    <img src="https://cushan.io/img/WIC/R%20Cube.svg" width=200px>
+                    <img src="https://cushan.io/img/WIC/R'%20Cube.svg" width=200px>
+                </div>
+                <div class="cushan-explain">
+                    <img src="https://cushan.io/img/WIC/U%20Cube.svg" width=200px>
+                    <img src="https://cushan.io/img/WIC/U'%20Cube.svg" width=200px>
+                </div>
+                <div class="cushan-explain">
+                    <img src="https://cushan.io/img/WIC/F%20Cube.svg" width=200px>
+                    <img src="https://cushan.io/img/WIC/F'%20Cube.svg" width=200px>
+                </div>
+                <div class="cushan-explain">
+                    <img src="https://cushan.io/img/WIC/R%20Wide%20Cube.svg" width=200px>
+                    <img src="https://cushan.io/img/WIC/L'%20Cube.svg" width=200px>
+                </div>
+                依此類推。<br>
+                也就是說，下面的公式會左右互相對應：
+                <div class="indent">
+                    <object type="image/svg+xml" width="200px" height="200px" data="https://cushan.io/api?alg=RUR'U'&bgCol=00000000"></object>
+                    <iframe height=200px src="https://alg.cubing.net/?alg=RUR-U-&view=fullscreen"></iframe>
+                </div>
+                <div class="indent">
+                    <object type="image/svg+xml" width="200px" height="200px" data="https://cushan.io/api?alg=R'FRF'&bgCol=00000000"></object>
+                    <iframe height=200px src="https://alg.cubing.net/?alg=R-FRF-&view=fullscreen"></iframe>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+<script src="../style.js"></script>
+<script src="./frame.js"></script>
+</html>
