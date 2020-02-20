@@ -17,8 +17,30 @@
     <nav>
         <li><a href="../index.html">回首頁</a></li>
         <li><a href="#Intro">基本概念</a></li>
-        <li><a href="#Cross">十字</a></li>
-        <li><a href="#First">第一層</a></li>
+        <li><a href="#Cross">十字</a>
+            <ul class="dropdown">
+                <li><a href="#Cross-flower">小花</a></li>
+                <li><a href="#Cross-done">完成</a></li>
+            </ul>
+        </li>
+        <li><a href="#First">第一層</a>
+            <ul class="dropdown">
+                <li><a href="#First-trouble">錯誤排除</a></li>
+            </ul>
+        </li>
+        <li><a href="#Second">第二層</a>
+            <ul class="dropdown">
+                <li><a href="#Second-trouble">錯誤排除</a></li>
+            </ul>
+        </li>
+        <li><a href="#Last">第三層</a>
+            <ul class="dropdown">
+                <li><a href="#Last-EO">頂面十字</a></li>
+                <li><a href="#Last-CO">頂面完成</a></li>
+                <li><a href="#Last-CP">角塊歸位</a></li>
+                <li><a href="#Last-EP">邊塊歸位</a></li>
+            </ul>
+        </li>
         <li class="content-change">
             <a href="https://www.worldcubeassociation.org/persons/2019LINS01" class="B">I suck</a>
             <img src="https://www.worldcubeassociation.org/files/WCAlogo_notext.svg" class="A">
@@ -46,7 +68,8 @@
             <h2>代號解說</h2>
             <div>
                 由於魔術方塊的公式十分複雜而難以記憶，我們通常會用一些符號表示。<br>
-                個人推薦使用<a href="https://cushan.io" class="nodec">CuSHan</a>記法，如果想學傳統記法可以點<a href="./333-trad.html" class="nodec">這裡</a>：
+                個人推薦使用<a href="https://cushan.io" class="nodec">CuSHan</a>記法，如果想學傳統記法可以點<a href="./333-trad.html" class="nodec">這裡</a><br>
+                CuSHan的規則是：<span class="emphasis">從原點開始，到箭頭結束，畫了哪幾條線就轉哪幾層</span>
                 <div class="cushan-explain" >
                     <img src="https://cushan.io/img/WIC/R%20Cube.svg" width=200px>
                     <img src="https://cushan.io/img/WIC/R'%20Cube.svg" width=200px>
@@ -67,21 +90,25 @@
                 也就是說，下面的公式會左右互相對應：
                 <div class="indent">
                     <object type="image/svg+xml" width="200px" height="200px" data="https://cushan.io/api?alg=RUR'U'&bgCol=00000000"></object>
-                    <iframe height=200px src="https://alg.cubing.net/?alg=RUR-U-&view=fullscreen"></iframe>
+                    <iframe height=200px src="https://alg.cubing.net/?setup=x2y&alg=RUR-U-&view=fullscreen"></iframe>
                 </div>
                 <div class="indent">
                     <object type="image/svg+xml" width="200px" height="200px" data="https://cushan.io/api?alg=R'FRF'&bgCol=00000000"></object>
-                    <iframe height=200px src="https://alg.cubing.net/?alg=R-FRF-&view=fullscreen"></iframe>
+                    <iframe height=200px src="https://alg.cubing.net/?setup=x2y&alg=R-FRF-&view=fullscreen"></iframe>
+                </div>
+                <div class="indent">
+                    <object type="image/svg+xml" height="200px" height="200px" data="https://cushan.io/api?alg=URU'R',d'L'UL&bgCol=00000000"></object>
+                    <iframe height=200px src="https://alg.cubing.net/?setup=x2yRUR-URU2R-L-ULdRU-R-U-&alg=URU-R-.d-L-UL&view=fullscreen"></iframe>
                 </div>
             </div>
             學習魔術方塊的時候，我推薦使用<span style="font-style: italic;">LBL解法</span>。
         </div>
         <div id="Cross">
             <h2>十字</h2>
-            <div>
+            <div id="Cross-intro">
                 初學的時候，通常會把十字分為兩個小步驟：
                 <div class="indent">
-                    <li class="dec">四個白色邊塊圍繞黃色中心</li>
+                    <li class="dec">四個白色邊塊圍繞黃色中心，有個很可愛的名字叫「小花」</li>
                     <li class="dec">對齊中心塊後轉180度到底下</li>
                 </div>
                 <div>
@@ -89,6 +116,8 @@
                     <span class="arrow">→</span>
                     <img src="./images/cross/cross-done.svg">
                 </div>
+            </div>
+            <div id="Cross-flower">
                 現在就從「圍繞黃色中心」開始吧～<br>
                 如果卡關的話，可以參考下面的公式：
                 <table>
@@ -128,6 +157,8 @@
                         
                     </tbody>
                 </table>
+            </div>
+            <div id="Cross-done">
                 接下來只要轉動最上層，找到對齊中心塊的顏色後→轉180度至底部，十字就完成了
                 <div>
                     <img src="./images/cross/flower-before.svg">
@@ -138,7 +169,7 @@
         </div>
         <div id="First">
             <h2>第一層</h2>
-            <div>
+            <div id="First-intro">
                 完成十字之後，把剩下的角塊補齊就做好第一層了
                 <div>
                     <img src="./images/first/cross.svg">
@@ -161,6 +192,71 @@
                     <img src="./images/first/right.svg">
                 </div>
             </div>
+            <div id="First-trouble">
+                如果在最上層找不到白色角塊的話，它應該會出現在下層。<br>
+                只要操作一次公式，它就會移回上層了。
+                <div>
+                    <img src="./images/first/wrong3.svg">
+                    <span class="arrow">→</span>
+                    <object type="image/svg+xml" width="200px" height="200px" data="https://cushan.io/api?alg=RUR'U'&bgCol=00000000"></object>
+                    <span class="arrow">→</span>
+                    <img src="./images/first/saved.svg">
+                </div>
+            </div>
+        </div>
+        <div id="Second">
+            <h2>第二層</h2>
+            <div id="Second-intro">
+                第二層要解的全部都是邊塊。從這裡開始，公式會變得比較長，加油！
+                <div>
+                    <img src="./images/first/done.svg">
+                    <span class="arrow">→</span>
+                    <img src="./images/second/done.svg">
+                </div>
+                首先要做的是：找出一個<span class="emphasis">第二層的邊塊</span><br>
+                什麼是第二層的邊塊呢？只要它的兩面都不是黃色就是了。<br>
+                再來，<span class="emphasis">對齊中心塊</span>後，判斷它要往哪個方向移動(下圖是向右)<br>
+                至於理由是什麼，可以在解完方塊之後想想看喔XD
+                <div>
+                    <img src="images/second/right-before.svg">
+                    <span class="arrow">→</span>
+                    <object type="image/svg+xml" height="200px" height="200px" data="https://cushan.io/api?alg=URU'R',d'L'UL&bgCol=00000000"></object>
+                    <span class="arrow">→</span>
+                    <img src="./images/second/right-after.svg">
+                </div>
+                動畫：
+                <div><iframe height=200px src="https://alg.cubing.net/?setup=x2yRUR-URU2R-L-ULdRU-R-U-&alg=URU-R-.d-L-UL&view=fullscreen"></iframe></div>
+                如果是向左的話，可以用相反的公式：
+                <div>
+                    <img src="images/second/left-before.svg">
+                    <span class="arrow">→</span>
+                    <object type="image/svg+xml" height="200px" height="200px" data="https://cushan.io/api?alg=dL'UL,d'RU'R'&bgCol=00000000"></object>
+                    <span class="arrow">→</span>
+                    <img src="images/second/left-after.svg">
+                </div>
+                動畫：
+                <div><iframe height=200px src="https://alg.cubing.net/?setup=x2yRUR-URU2R-dURUR-d-L-U-Ld&alg=d-L-UL.dRU-R-&view=fullscreen"></iframe></div>
+            </div>
+            <div id="Second-trouble">
+                如果發現上層沒有第二層的邊塊，可以在任何一個放錯的地方操作一次公式：
+                <div>
+                    <img src="images/second/wrong-before.svg">
+                    <span class="arrow">→</span>
+                    <object type="image/svg+xml" height="200px" height="200px" data="https://cushan.io/api?alg=URU'R',d'L'UL,U&bgCol=00000000"></object>
+                    <span class="arrow">→</span>
+                    <img src="images/second/wrong-after.svg">
+                </div>
+            </div>
+        </div>
+        <div id="Last">
+            <h2>第三層</h2>
+            <div id="Last-intro">
+                在開始之前，先來了解一下最後一層的完成順序：
+            </div>
+            <div id="Last-EO"></div>
+            <div id="Last-CO"></div>
+            <div id="Last-CP"></div>
+            <div id="Last-EP"></div>
         </div>
         </div>
     </div>

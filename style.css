@@ -54,6 +54,7 @@ nav li:hover .dropdown{
 
 nav .content-change{
     float: right;
+    overflow: hidden;
 }
 
 .content-change .A{
