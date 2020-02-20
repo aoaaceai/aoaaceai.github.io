@@ -24,3 +24,7 @@ table, tr, th{
     position: relative;
     bottom:100px;
 }
+
+.inline{
+    display: inline-block;
+}
