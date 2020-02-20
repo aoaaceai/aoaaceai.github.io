@@ -11,14 +11,24 @@
 
 <body>
     <div id="easter-egg"></div>
-    <div id="navbar">
-        <a href="index.html">回首頁</a>
-        <a href="https://stoneapp.tech/cavern">cavern</a>
-        <div style="float:right;height: 52px;">
-            <a href="https://github.com/aoaaceai" onmouseover=github_on(this) onmouseout=github_out(this)><img src="images/github-logo.png" id="navbar-icon" height=40px></a>
-            <a href="https://www.worldcubeassociation.org/persons/2019LINS01"  onmouseover=wca_on(this) onmouseout=wca_out(this)><img src="https://www.worldcubeassociation.org/files/WCAlogo_notext.svg" class="navbar-icon-follow"></a>
-        </div>
-        </div>
+    <nav>
+        <li><a href="./index.html">回首頁</a></li>
+        <li><a>Cubing tutorial<i class="fa fa-caret-down"></i></a>
+            <ul class="dropdown">
+                <li><a href="./tutorial/333.html">3x3x3</a></li>
+                <li><a href="./tutorial/333-trad.html">3x3x3-舊式</a></li>
+            </ul>
+        </li>
+        <li class="content-change">
+            <a href="https://www.worldcubeassociation.org/persons/2019LINS01" class="B">I suck</a>
+            <img src="https://www.worldcubeassociation.org/files/WCAlogo_notext.svg" class="A">
+        </li>
+        <li class="content-change">
+            <a href="https://github.com/aoaaceai" class="B">I suck</a>
+            <img src="images/github-logo.png" class="A">
+        </li>
+        
+    </nav>
     
     <div class="flex-main" id="content">
         <div style="align-self: center;">

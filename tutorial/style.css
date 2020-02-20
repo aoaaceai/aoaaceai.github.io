@@ -1,4 +1,3 @@
-
 .cushan-explain{
     display:flex;
     align-items:center;
@@ -6,4 +5,22 @@
 }
 .indent{
     margin-left:4em;
+}
+
+.dec{
+    list-style-type:decimal;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table, tr, th{
+    padding:15px;
+    border:1px solid white;
+}
+
+.arrow{
+    position: relative;
+    bottom:100px;
 }

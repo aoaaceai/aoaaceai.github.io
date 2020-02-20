@@ -3,7 +3,6 @@
     
 <head>
     <!-- <meta http-equiv="refresh" content="5"> -->
-    <script src="./mouse.js"></script>
     <title>魔術方塊教學 - aoaaceai</title>
     <link href="../style.css" rel="stylesheet" type="text/css">
     <link href="./style.css" rel="stylesheet" type="text/css">
@@ -15,15 +14,21 @@
         <h1>So you want to solve a cube.</h1>
     </div>
     
-    <div id="navbar">
-        <a href="../index.html">回首頁</a>
-        <a href="#Intro">基本概念</a>
-        <a href="https://stoneapp.tech/cavern">cavern</a>
-        <div style="float:right;height: 52px;">
-            <a href="https://github.com/aoaaceai" onmouseover=github_on(this) onmouseout=github_out(this)><img src="../images/github-logo.png" id="navbar-icon" height=40px></a>
-            <a href="https://www.worldcubeassociation.org/persons/2019LINS01"  onmouseover=wca_on(this) onmouseout=wca_out(this)><img src="https://www.worldcubeassociation.org/files/WCAlogo_notext.svg" class="navbar-icon-follow"></a>
-        </div>
-        </div>
+    <nav>
+        <li><a href="../index.html">回首頁</a></li>
+        <li><a href="#Intro">基本概念</a></li>
+        <li><a href="#Cross">十字</a></li>
+        <li><a href="#First">第一層</a></li>
+        <li class="content-change">
+            <a href="https://www.worldcubeassociation.org/persons/2019LINS01" class="B">I suck</a>
+            <img src="https://www.worldcubeassociation.org/files/WCAlogo_notext.svg" class="A">
+        </li>
+        <li class="content-change">
+            <a href="https://github.com/aoaaceai" class="B">I suck</a>
+            <img src="../images/github-logo.png" class="A">
+        </li>
+        
+    </nav>
     
     <div class="flex-main" id="content">
         <div style="align-self: center;">
@@ -36,7 +41,7 @@
                     <li>角塊(藍色，8塊)</li>
                     <li>中心塊(灰色，6塊)</li>
                 </div>
-                <div id="image-container" class="indent"><img src="image/pieces.png" width=300px/></div>
+                <div id="image-container" class="indent"><img src="./images/pieces.svg"></div>
             </div>
             <h2>代號解說</h2>
             <div>
@@ -69,10 +74,96 @@
                     <iframe height=200px src="https://alg.cubing.net/?alg=R-FRF-&view=fullscreen"></iframe>
                 </div>
             </div>
+            學習魔術方塊的時候，我推薦使用<span style="font-style: italic;">LBL解法</span>。
+        </div>
+        <div id="Cross">
+            <h2>十字</h2>
+            <div>
+                初學的時候，通常會把十字分為兩個小步驟：
+                <div class="indent">
+                    <li class="dec">四個白色邊塊圍繞黃色中心</li>
+                    <li class="dec">對齊中心塊後轉180度到底下</li>
+                </div>
+                <div>
+                    <img src="./images/cross/flower-main.svg">
+                    <span class="arrow">→</span>
+                    <img src="./images/cross/cross-done.svg">
+                </div>
+                現在就從「圍繞黃色中心」開始吧～<br>
+                如果卡關的話，可以參考下面的公式：
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Case</th>
+                            <th>公式</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <th><img src="images/cross/case1.svg"></th>
+                            <th><object type="image/svg+xml" width="200px" height="200px" data="https://cushan.io/api?alg=R&bgCol=00000000"></object></th>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <th><img src="images/cross/case2.svg"></th>
+                            <th><object type="image/svg+xml" width="200px" height="200px" data="https://cushan.io/api?alg=F'&bgCol=00000000"></object></th>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <th><img src="images/cross/case3.svg"></th>
+                            <th><object type="image/svg+xml" width="200px" height="200px" data="https://cushan.io/api?alg=F2&bgCol=00000000"></object></th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <th><img src="images/cross/case4.svg"></th>
+                            <th><object type="image/svg+xml" width="200px" height="200px" data="https://cushan.io/api?alg=F'U'R&bgCol=00000000"></object></th>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <th><img src="images/cross/case5.svg"></th>
+                            <th><object type="image/svg+xml" width="200px" height="200px" data="https://cushan.io/api?alg=FU'R&bgCol=00000000"></object></th>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                接下來只要轉動最上層，找到對齊中心塊的顏色後→轉180度至底部，十字就完成了
+                <div>
+                    <img src="./images/cross/flower-before.svg">
+                    <span class="arrow">→</span>
+                    <img src="./images/cross/flower-after.svg">
+                </div>
+            </div>
+        </div>
+        <div id="First">
+            <h2>第一層</h2>
+            <div>
+                完成十字之後，把剩下的角塊補齊就做好第一層了
+                <div>
+                    <img src="./images/first/cross.svg">
+                    <span class="arrow">→</span>
+                    <img src="./images/first/done.svg">
+                </div>
+                首先，我們要從最上層找到一個<span class="emphasis">包含白色</span>的角塊<br>
+                移到<span class="emphasis">三種顏色都相符</span>的位置上面，不斷的做下面的公式：
+                <div>
+                    <img src="./images/first/corner1.svg">
+                    <span class="arrow">→</span>
+                    <object type="image/svg+xml" width="200px" height="200px" data="https://cushan.io/api?alg=RUR'U'&bgCol=00000000"></object>
+                    <span class="arrow">*n →</span>
+                    <img src="./images/first/corner2.svg">
+                </div>
+                另外，在放入角塊時，也要注意它放入的方向是否正確。
+                <div>
+                    <img src="./images/first/wrong1.svg">
+                    <img src="./images/first/wrong2.svg">
+                    <img src="./images/first/right.svg">
+                </div>
+            </div>
         </div>
         </div>
     </div>
 </body>
 <script src="../style.js"></script>
-<script src="./frame.js"></script>
 </html>

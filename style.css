@@ -8,6 +8,75 @@ body{
     color: rgb(228, 228, 228);
 }
 
+nav{
+    position:sticky;
+    top:0;
+    z-index: 10000;
+    width: 100%;
+    background-color: #666666;
+}
+
+nav li{
+    display:inline-block;
+    font-size:27px;
+    color:#ffffff;
+}
+
+nav li a{
+    text-decoration: none;
+    color:#ffffff;
+    padding:15px;
+    display:block;
+}
+
+nav li a:hover{
+    color: #666666;
+    background-color: #ffffff;
+}
+
+
+nav .dropdown{
+    display:none;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: -40px;
+}
+
+nav .dropdown li{
+    display: block;
+    background-color:#666666;
+    width: 100%;
+}
+
+nav li:hover .dropdown{
+    display:block;
+}
+
+nav .content-change{
+    float: right;
+}
+
+.content-change .A{
+    position: absolute;
+    transform: translate(50%,-115%);
+}
+
+.content-change .B{
+    position: relative;
+}
+
+.content-change .B{
+    opacity:0;
+}
+
+.content-change:hover .B{
+    opacity: 1;
+}
+
+.content-change:hover .A{
+    display: none;
+}
+
 h2{
     align-self: center;
 }
@@ -19,68 +88,6 @@ h2{
     padding-bottom:30px;
 }
 
-#navbar{
-    overflow: hidden;
-    z-index: 2147483647;
-    width:100%;
-    background-color: #666666;
-}
-
-.sticky{
-    position: fixed;
-    top:0;
-    width:100%;
-}
- 
-#navbar a{
-    float:left;
-    display: block;
-    font-size: 27px;
-    padding:15px;
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.dropdown{
-    float:left;
-    overflow: hidden;
-}
-
-.dropbtn{
-    font-size: 27px;
-    padding:15px;
-    color:#ffffff;
-    background-color: inherit;
-    text-decoration: none;
-    border:none;
-    margin:0;
-}
-
-.dropdown:hover .dropbtn{
-    color:rgb(34, 34, 34);
-    background-color: #ffffff;
-}
-
-.dropdown-content{
-    display:none;
-    position:absolute;
-    background-color: inherit;
-}
-
-.dropdown-content a{
-    clear:both;
-    background-color:#565656;
-    text-align: center;
-}
-
-.dropdown:hover .dropdown-content{
-    display: block;
-}
-
-#navbar a:hover{
-    color: rgb(34, 34, 34);
-    background-color: #ffffff;
-}
 
 .flex-main{
     display:flex;
@@ -88,9 +95,6 @@ h2{
     justify-content: center;
 }
 
-.savespace{
-    padding-top: 71px;
-}
 .explain{
     cursor: help;
 }
@@ -127,4 +131,9 @@ h2{
 
 #funfact:hover::after{
     content:"Dang I was so awkward.";
+}
+
+.emphasis{
+    color: white;
+    font-weight: bolder;
 }

@@ -1,17 +1,3 @@
-function github_on(x){
-    x.innerHTML="I suck";
-}
-function github_out(x){
-  x.innerHTML="<img src=\"images/github-logo.png\" height="+icon_size.toString()+"px>";
-}
-
-function wca_on(x){
-  x.innerHTML="WCA Profile";
-}
-function wca_out(x){
-  x.innerHTML="<img src=\"https://www.worldcubeassociation.org/files/WCAlogo_notext.svg\" height="+icon_size.toString()+"px>";
-}
-
 function zhuyuangang_on(x){
     x.innerText="2020竹園岡附近公開賽";
     x.style.fontStyle="normal";
