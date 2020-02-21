@@ -10,6 +10,7 @@ function zhuyuangang_out(x){
 function gravity_on(x){
   var img=document.getElementById("gravity-image");
   img.style.visibility="visible";
+  img.style.display="inline-block";
   img.style.marginTop=window.getComputedStyle(x).getPropertyValue("font-size");
   img.style.paddingTop="0.5em";
   img.style.right="40%"

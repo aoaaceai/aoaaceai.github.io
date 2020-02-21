@@ -120,6 +120,7 @@ h2{
 
 #gravity-image{
     position: absolute;
+    display:none;
     visibility: hidden;
 }
 
