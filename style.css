@@ -59,11 +59,15 @@ nav li:hover .dropdown{
 nav .content-change{
     float: right;
     overflow: hidden;
+    position: relative;
 }
 
 .content-change .A{
     position: absolute;
-    transform: translate(50%,-115%);
+    height:80%;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
 }
 
 .content-change .B{
