@@ -129,7 +129,7 @@ h2{
 }
 
 .gravity:hover ::after{
-    content:" NOTE: it unavoidably becomes a mess in like 15 seconds.";
+    content:" NOTE: it unavoidably becomes a mess in like 20 runs.";
 }
 
 #Ep:hover #Ep-hid{
