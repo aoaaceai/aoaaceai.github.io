@@ -1,0 +1,22 @@
+#gravity-image{
+    position: absolute;
+    display:none;
+    visibility: hidden;
+}
+
+.gravity:hover #gravity-image{
+    visibility: visible;
+}
+
+.gravity:hover ::after{
+    content:"\A" " NOTE: it unavoidably becomes a mess in like 20 runs.";
+    white-space: pre-line;
+}
+
+#Ep:hover #Ep-hid{
+    visibility: visible;
+}
+
+#funfact:hover::after{
+    content:"Dang I was so awkward.";
+}

@@ -122,28 +122,6 @@ h2{
     cursor:text;
 }
 
-#gravity-image{
-    position: absolute;
-    display:none;
-    visibility: hidden;
-}
-
-.gravity:hover #gravity-image{
-    visibility: visible;
-}
-
-.gravity:hover ::after{
-    content:" NOTE: it unavoidably becomes a mess in like 20 runs.";
-}
-
-#Ep:hover #Ep-hid{
-    visibility: visible;
-}
-
-#funfact:hover::after{
-    content:"Dang I was so awkward.";
-}
-
 .emphasis{
     color: white;
     font-weight: bolder;
@@ -156,6 +134,7 @@ h2{
 }
 
 .bottom{
+    padding-top:6%;
     font-size: small;
     text-align: center;
 }
