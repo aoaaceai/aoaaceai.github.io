@@ -8,14 +8,14 @@ body{
     color: rgb(228, 228, 228);
 }
 
-.header{
+.full-header{
     position: relative;
     text-align: center;
     text-shadow: 1.5px 1.5px #6e6e6e;
     min-height:100vh;
 }
 
-.header .bg{
+.full-header .bg{
     position:absolute;
     width: 100%;
     height: 100%;
@@ -24,7 +24,7 @@ body{
     opacity: 30%;
 }
 
-.header .content{
+.full-header .content{
     background-color:none;
     position:absolute;
     top:50%;
@@ -32,18 +32,29 @@ body{
     transform: translate(-50%, -50%);
     color:rgb(243, 243, 243);
 }
-/* .header .text{
-    background-color: #1b1b1b28;
-} */
 
-.header h1{
+.full-header #smalltext{
+    position:absolute;
+    color:none;
+    left:0;
+}
+
+.full-header h1{
     padding:0px;
     margin:0px;
 }
 
-.header p{
+.full-header p{
     margin:0px;
     padding:0px;
+}
+
+.header{
+    text-align: center;
+    text-shadow: 1px 1px #909090;
+    width:100%;
+    padding-top:30px;
+    padding-bottom:30px;
 }
 
 .avatar{
