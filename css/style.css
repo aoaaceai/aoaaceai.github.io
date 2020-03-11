@@ -145,6 +145,20 @@ nav .content-change{
 
 h2{
     align-self: center;
+    margin-bottom: 0;
+    position: relative;
+}
+
+#content h2:before{
+    display:block;
+    content:"This can be an easter egg, right?";
+    position: absolute;
+    overflow:hidden;
+    width: 0.2em;
+    height: 100%;
+    left:-0.5em;
+    background-color:#ff0000da;
+    color:#00000000;
 }
 
 
