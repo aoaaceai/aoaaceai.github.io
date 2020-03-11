@@ -6,6 +6,7 @@
     <title>魔術方塊教學 - aoaaceai</title>
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link href="./style.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -41,6 +42,9 @@
                 <li><a href="#Last-EP">邊塊歸位</a></li>
             </ul>
         </li
+        ><li>
+            <a href="#Example">動畫示範</a>
+        </li
         ><li class="content-change">
             <img src="https://www.worldcubeassociation.org/files/WCAlogo_notext.svg" class="A">
             <a href="https://www.worldcubeassociation.org/persons/2019LINS01" class="B">I suck</a>
@@ -67,6 +71,7 @@
             </p>
             <h2>代號解說</h2><hr>
             <p>
+                <a href="./333.html" class="nodec emphasis">覺得這段太複雜嗎？何不學學圖像化的標記法？</a><br>
                 由於魔術方塊的公式十分複雜而難以記憶，我們通常會用一些英文符號表示。<br>
                 首先，R、U、L、D、F、B分別代表右(Right)、上(Up)、左(Left)、下(Down)、前(Front)、後(Back)<span class="emphasis">順時鐘90度</span><br>
                 如果加了一撇，讀作<span style="font-style: italic;">prime</span>，代表<span class="emphasis">逆時鐘90度</span>。<br>
@@ -83,19 +88,19 @@
                     <tbody>
                         <tr>
                             <th>R U R' U'</th>
-                            <th><iframe height=200px src="https://alg.cubing.net/?setup=x2y&alg=RUR-U-&view=fullscreen"></iframe></th>
+                            <th><iframe class="loadframe" height=200px src="../iframe-hide.html" data-src="https://alg.cubing.net/?setup=x2y&alg=RUR-U-&view=fullscreen"></iframe></th>
                         </tr>
                         <tr>
                             <th>R U2 R'</th>
-                            <th><iframe height=200px src="https://alg.cubing.net/?setup=x2y&alg=RU2R'&view=fullscreen"></iframe></th>
+                            <th><iframe class="loadframe" height=200px src="../iframe-hide.html" data-src="https://alg.cubing.net/?setup=x2y&alg=RU2R'&view=fullscreen"></iframe></th>
                         </tr>
                         <tr>
                             <th>d' L' U L</th>
-                            <th><iframe height=200px src="https://alg.cubing.net/?setup=x2y&alg=d-L-UL&view=fullscreen"></iframe></th>
+                            <th><iframe class="loadframe" height=200px src="../iframe-hide.html" data-src="https://alg.cubing.net/?setup=x2y&alg=d-L-UL&view=fullscreen"></iframe></th>
                         </tr>
                         <tr>
                             <th>x y z M S E</th>
-                            <th><iframe height=200px src="https://alg.cubing.net/?setup=x2y&alg=x.y.z.M.S.E&view=fullscreen"></iframe></th>
+                            <th><iframe class="loadframe" height=200px src="../iframe-hide.html" data-src="https://alg.cubing.net/?setup=x2y&alg=x.y.z.M.S.E&view=fullscreen"></iframe></th>
                         </tr>
                     </tbody>
                 </table>
@@ -107,7 +112,7 @@
             <p id="Cross-intro">
                 初學的時候，通常會把十字分為兩個小步驟：
                 <div class="indent">
-                    <li class="dec">四個白色邊塊圍繞黃色中心，有個很可愛的名字叫「小花」</li>
+                    <li class="dec">四個白色邊塊圍繞黃色中心<span class="whisper">，這有個很可愛的名字叫「小花」</span></li>
                     <li class="dec">對齊中心塊後轉180度到底下</li>
                 </div>
                 <div>
@@ -225,7 +230,7 @@
                     <img src="./images/second/right-after.svg">
                 </div>
                 動畫：
-                <div><iframe height=200px src="https://alg.cubing.net/?setup=x2yRUR-URU2R-L-ULdRU-R-U-&alg=URU-R-.d-L-UL&view=fullscreen"></iframe></div>
+                <div><iframe class="loadframe" height=200px src="../iframe-hide.html" data-src="https://alg.cubing.net/?setup=x2yRUR-URU2R-L-ULdRU-R-U-&alg=URU-R-.d-L-UL&view=fullscreen"></iframe></div>
                 如果是向左的話，可以用相反的公式：
                 <div>
                     <img src="images/second/left-before.svg"><wbr>
@@ -233,7 +238,7 @@
                     <img src="images/second/left-after.svg">
                 </div>
                 動畫：
-                <div><iframe height=200px src="https://alg.cubing.net/?setup=x2yRUR-URU2R-dURUR-d-L-U-Ld&alg=d-L-UL.dRU-R-&view=fullscreen"></iframe></div>
+                <div><iframe class="loadframe" height=200px src="../iframe-hide.html" data-src="https://alg.cubing.net/?setup=x2yRUR-URU2R-dURUR-d-L-U-Ld&alg=d-L-UL.dRU-R-&view=fullscreen"></iframe></div>
             </p>
             <p id="Second-trouble">
                 如果發現上層沒有第二層的邊塊，可以在任何一個放錯的地方操作一次公式：
@@ -454,6 +459,14 @@
                 嗯對，你已經會解開魔術方塊囉！
             </p>
         </div>
+        <div id="Example">
+            <h2>範例</h2><hr>
+            <p>
+                接下來是一些使用本解法的範例動畫：
+            </p>
+            <div><iframe class="loadframe" height=300px width=400px src="../iframe-hide.html" data-src="https://tinyurl.com/ss7f3ys"></iframe></div>
+            <div><iframe class="loadframe" height=300px width=400px src="../iframe-hide.html" data-src="https://tinyurl.com/qrm6byh"></iframe></div>
+        </div>
         </div>
     </div>
     <footer class="bottom">
@@ -464,5 +477,5 @@
         <span style="display:inline-block; position: absolute;right:0em;"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/tw/"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/tw/88x31.png" /></a></span>
     </footer>
 </body>
-
+<script src="../js/iframe-hide.js"></script>
 </html>

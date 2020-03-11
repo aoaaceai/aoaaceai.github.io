@@ -203,3 +203,12 @@ h2{
     font-size: small;
     text-align: center;
 }
+
+iframe{
+    border:1px solid rgb(202, 202, 202);
+}
+
+table iframe{
+    border:none;
+}
+

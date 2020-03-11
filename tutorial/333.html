@@ -6,6 +6,7 @@
     <title>魔術方塊教學 - aoaaceai</title>
     <link href="../css/style.css" rel="stylesheet" type="text/css">
     <link href="./style.css" rel="stylesheet" type="text/css">
+    <script src="../js/jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -40,6 +41,9 @@
                 <li><a href="#Last-CP">角塊歸位</a></li>
                 <li><a href="#Last-EP">邊塊歸位</a></li>
             </ul>
+        </li
+        ><li>
+            <a href="#Example">動畫示範</a>
         </li
         ><li class="content-change">
             <img src="https://www.worldcubeassociation.org/files/WCAlogo_notext.svg" class="A">
@@ -91,15 +95,15 @@
                 也就是說，下面的公式會左右互相對應：
                 <div class="indent">
                     <object type="image/svg+xml" width="200px" height="200px" data="https://cushan.io/api?alg=RUR'U'&bgCol=00000000"></object>
-                    <iframe height=200px src="https://alg.cubing.net/?setup=x2y&alg=RUR-U-&view=fullscreen"></iframe>
+                    <iframe class="loadframe" height=200px src="../iframe-hide.html" data-src="https://alg.cubing.net/?setup=x2y&alg=RUR-U-&view=fullscreen"></iframe>
                 </div>
                 <div class="indent">
                     <object type="image/svg+xml" width="200px" height="200px" data="https://cushan.io/api?alg=R'FRF'&bgCol=00000000"></object>
-                    <iframe height=200px src="https://alg.cubing.net/?setup=x2y&alg=R-FRF-&view=fullscreen"></iframe>
+                    <iframe class="loadframe" height=200px src="../iframe-hide.html" data-src="https://alg.cubing.net/?setup=x2y&alg=R-FRF-&view=fullscreen"></iframe>
                 </div>
                 <div class="indent">
                     <object type="image/svg+xml" height="200px" height="200px" data="https://cushan.io/api?alg=URU'R',d'L'UL&bgCol=00000000"></object>
-                    <iframe height=200px src="https://alg.cubing.net/?setup=x2yRUR-URU2R-L-ULdRU-R-U-&alg=URU-R-.d-L-UL&view=fullscreen"></iframe>
+                    <iframe class="loadframe" height=200px src="../iframe-hide.html" data-src="https://alg.cubing.net/?setup=x2yRUR-URU2R-L-ULdRU-R-U-&alg=URU-R-.d-L-UL&view=fullscreen"></iframe>
                 </div>
             </p>
             學習魔術方塊的時候，我推薦使用<span style="font-style: italic;">LBL解法</span>。
@@ -109,7 +113,7 @@
             <p id="Cross-intro">
                 初學的時候，通常會把十字分為兩個小步驟：
                 <div class="indent">
-                    <li class="dec">四個白色邊塊圍繞黃色中心，有個很可愛的名字叫「小花」</li>
+                    <li class="dec">四個白色邊塊圍繞黃色中心<span class="whisper">，這有個很可愛的名字叫「小花」</span></li>
                     <li class="dec">對齊中心塊後轉180度到底下</li>
                 </div>
                 <div>
@@ -233,7 +237,7 @@
                     <img src="./images/second/right-after.svg">
                 </div>
                 動畫：
-                <div><iframe height=200px src="https://alg.cubing.net/?setup=x2yRUR-URU2R-L-ULdRU-R-U-&alg=URU-R-.d-L-UL&view=fullscreen"></iframe></div>
+                <div><iframe class="loadframe" height=200px src="../iframe-hide.html" data-src="https://alg.cubing.net/?setup=x2yRUR-URU2R-L-ULdRU-R-U-&alg=URU-R-.d-L-UL&view=fullscreen"></iframe></div>
                 如果是向左的話，可以用相反的公式：
                 <div>
                     <img src="images/second/left-before.svg"><wbr>
@@ -243,7 +247,7 @@
                     <img src="images/second/left-after.svg">
                 </div>
                 動畫：
-                <div><iframe height=200px src="https://alg.cubing.net/?setup=x2yRUR-URU2R-dURUR-d-L-U-Ld&alg=d-L-UL.dRU-R-&view=fullscreen"></iframe></div>
+                <div><iframe class="loadframe" height=200px src="../iframe-hide.html" data-src="https://alg.cubing.net/?setup=x2yRUR-URU2R-dURUR-d-L-U-Ld&alg=d-L-UL.dRU-R-&view=fullscreen"></iframe></div>
             </p>
             <p id="Second-trouble">
                 如果發現上層沒有第二層的邊塊，可以在任何一個放錯的地方操作一次公式：
@@ -277,7 +281,7 @@
                 第一步驟只有一個公式，只要反覆操作就能完成十字了！
                 <div class="indent">
                     <object type="image/svg+xml" width="200px" height="200px" data="https://cushan.io/api?alg=FRUR'U'F'&bgCol=00000000"></object>
-                    <iframe height=200px src="https://alg.cubing.net/?setup=x2R-U2RUR-URFURU-R-F-&alg=FRUR-U-F-&view=fullscreen"></iframe>
+                    <iframe class="loadframe" height=200px src="../iframe-hide.html" data-src="https://alg.cubing.net/?setup=x2R-U2RUR-URFURU-R-F-&alg=FRUR-U-F-&view=fullscreen"></iframe>
                 </div>
                 <table>
                     <thead>
@@ -481,8 +485,8 @@
             <p>
                 接下來是一些使用本解法的範例動畫：
             </p>
-            <div><iframe height=300px width=400px src="https://tinyurl.com/ss7f3ys"></iframe></div>
-            <div><iframe height=300px width=400px src="https://tinyurl.com/qrm6byh"></iframe></div>
+            <div><iframe class="loadframe" height=300px width=400px src="../iframe-hide.html" data-src="https://tinyurl.com/ss7f3ys"></iframe></div>
+            <div><iframe class="loadframe" height=300px width=400px src="../iframe-hide.html" data-src="https://tinyurl.com/qrm6byh"></iframe></div>
         </div>
         </div>
     </div>
@@ -494,5 +498,5 @@
         <span style="display:inline-block; position: absolute;right:0em;"><a rel="license" href="http://creativecommons.org/licenses/by/3.0/tw/" class="nodec"><img alt="創用 CC 授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/tw/88x31.png" /></a></span>
     </footer>
 </body>
-
+<script src="../js/iframe-hide.js"></script>
 </html>
