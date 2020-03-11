@@ -20,3 +20,11 @@
 #funfact:hover::after{
     content:"Dang I was so awkward.";
 }
+
+.porabola:hover:after{
+    content:" But it is.";
+}
+
+.generator:hover:after{
+    content:" NOTE: some experiments required.";
+}
