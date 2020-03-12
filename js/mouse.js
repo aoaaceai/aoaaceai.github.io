@@ -12,8 +12,6 @@ function gravity_on(x){
   img.style.visibility="visible";
   img.style.display="inline-block";
   img.style.marginTop=window.getComputedStyle(x).getPropertyValue("font-size");
-  img.style.paddingTop="0.5em";
-  img.style.right="40%"
   img.style.width=(window.innerWidth*0.3).toString()+"px";
 }
 

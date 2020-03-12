@@ -1,7 +1,23 @@
 #gravity-image{
     position: absolute;
     display:none;
+    left:50%;
+    transform: translateX(-50%);
     visibility: hidden;
+    padding-top:0.5em;
+    z-index:2;
+}
+
+#gravity-image .triangle-up{
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#gravity-image img{
+    padding:0.5em;
+    background-color: #555;
+    border-radius: 2%;
 }
 
 .gravity:hover #gravity-image{
