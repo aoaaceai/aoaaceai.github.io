@@ -1,6 +1,6 @@
 var url = new URL(document.URL).searchParams;
 
-if(url.has("password") && url.has("service")) {
+if(url.has("password") && url.has("service") && url.has("limit")) {
     
     var password = url.get("password");
 
@@ -11,12 +11,12 @@ if(url.has("password") && url.has("service")) {
 
     password = CryptoJS.SHA256(salt1+password+salt2).toString();
 
-    console.log("succeeded");
-
+    var limit = parseInt(url.get("limit"), 10);
+    if(isNaN(limit)) {
+        limit = password.length;
+    }
     $("#generated-password").text(
-        url.has("limit")
-        ?password.split("").slice(0, parseInt(url.get("limit"), 10)).join("")
-        :password
+        password.split("").slice(0, limit).join("")
     );
     $('#password-display').css("display", "block");
 }
