@@ -1,0 +1,35 @@
+#password-display {
+    display:none;
+}
+
+input {
+    width:100%;
+    padding:10px 10px;
+    margin:8px 0px;
+    display: inline-block;
+    border: 1px solid #888;
+    box-sizing: border-box;
+}
+
+.container {
+    padding:16px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button {
+    padding:10px 10px;
+    margin:12px 0px;
+    background-color:#666666;
+    color:white;
+    display:inline-block;
+    border:none;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    width:100%;
+}
+
