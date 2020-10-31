@@ -4,11 +4,11 @@
     <link href="https://aoaaceai.github.io/css/style.css" rel="stylesheet" type="text/css">
     <link href="./css/style.css" rel="stylesheet" type="text/css">
     <script src="https://aoaaceai.github.io/js/jquery-3.4.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/sha256.js"></script>
-    
+    <script src="js/catcher.js"></script>
+    <script src="js/bases.js"></script>
     <title>password creator</title>
 </head>
-<body>​​​​​​​
+<body onload="catchURL(); catchSubmission();">​​​​​​​
     <div class="header" id="header">
         <h1>Password Creator</h1>
     </div>
@@ -17,13 +17,13 @@
     </nav>
     <script src="https://aoaaceai.github.io/js/navbar-style.js"></script>
     <div class="flex-main" id="content"><div style="align-self: center;">
-        <div id="password-display" class="container">
+        <div id="password-display" class="container" onload="catchURL()">
             The hash generated: <span id="generated-password"></span>
             <button onclick="copyToClipboard('generated-password')">copy</button>
         </div>
-        <script src="./js/urlCatcher.js"></script>
+        
 
-        <form id="hashnt" action="./index.htm" method="GET">
+        <form id="hashnt" action="./index.htm" method="GET" onload="catchSubmission()">
             <div class="container">
                 <label for="password" class="emphasis">Original Password</label>
                 <input type="password" placeholder="Enter Password" name="password" required>
@@ -34,14 +34,22 @@
                 <label for="limit" class="emphasis">Length Limit</label>
                 <input type="number" placeholder="Enter Password Length (if you want a limit)" max=64 name="limit">
                 
+                <label>
+                    <input type="checkbox" name="numbers">include numbers
+                </label>
+
+                <label>
+                    <input type="checkbox" name="upper">include uppercase letters
+                </label>
+
                 <button type="submit">Generate Password</button>
             </div>
         </form>
-        <script src="js/submitCatcher.js"></script>
+        
 
         
         <!-- <div class="container">
-            this is a super long content which is totally filled with gibberish lmao please end me or otherwise i will keep typing nonsense chaos chaos chaos chaos chaos chaos chaos chaos
+            this is some super long content which is totally filled with gibberish lmao please end me or otherwise i will keep typing nonsense chaos chaos chaos chaos chaos chaos chaos chaos
         </div>    -->
         </div></div>
     <footer class="bottom">
