@@ -30,6 +30,7 @@ function catchURL() {
         if(isNaN(limit)) {
             limit = password.length;
         }
+        password = baseConvert(password, usingOptions(url));
         $("#generated-password").text(
             password.split("").slice(0, limit).join("")
         );
